@@ -10,7 +10,7 @@
 
    - name: Apacheの起動とchkconfig登録
      service:
-       name=apche2
+       name=apache2
        state=started
        enabled=yes
 
