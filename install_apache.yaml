@@ -1,13 +1,12 @@
 # ApacheインストールPlaybook
 
 - hosts: all
-  sudo: yes
+  become: yes
   tasks:
    - name: yumでApacheインストール
      yum:
        name=httpd
        state=present
-
 
    - name: Apacheの起動とchkconfig登録
      service:
