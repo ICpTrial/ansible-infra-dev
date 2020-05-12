@@ -5,8 +5,8 @@
   tasks:
    - name: yumでApacheインストール
      apt:
-       name=httpd
-       state=present
+       name: apache2
+       state: present
 
    - name: Apacheの起動とchkconfig登録
      service:
