@@ -3,14 +3,14 @@
 - hosts: all
   become: true
   tasks:
-   - name: yumでApacheインストール
+   - name: apt でApacheインストール
      apt:
        name: apache2
        state: present
 
    - name: Apacheの起動とchkconfig登録
      service:
-       name=httpd
+       name=apche2
        state=started
        enabled=yes
 
