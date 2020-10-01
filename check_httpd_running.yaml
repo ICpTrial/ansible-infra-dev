@@ -1,10 +1,8 @@
-
 # ApacheインストールPlaybook
 
 - hosts: all
-  sudo: yes
-  tasks:
-  
+  become: yes
+  tasks: 
   - name: Start service httpd, if not started
     service:
       name: httpd
