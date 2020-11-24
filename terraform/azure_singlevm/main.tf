@@ -224,7 +224,3 @@ output "azure_vm_public_ip" {
 output "azure_vm_private_ip" {
   value = azurerm_network_interface.vm.private_ip_address
 }
-  
-output "azure_vm_nic_public_ip" {
-  value = azurerm_network_interface.vm.public_ip_address_id.ip_address
-}
